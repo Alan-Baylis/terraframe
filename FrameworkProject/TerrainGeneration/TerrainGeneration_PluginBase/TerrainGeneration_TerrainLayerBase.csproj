@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D77B2CCA-F86D-484D-B97C-B51C4FF0EA28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TerrainGeneration_TerrainLayerBase</RootNamespace>
+    <AssemblyName>TerrainGeneration_TerrainLayerBase</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormField\FormField.cs" />
+    <Compile Include="FormField\FormFieldCheck.cs" />
+    <Compile Include="FormField\FormFieldInteger.cs" />
+    <Compile Include="FormField\FormFieldNumber.cs" />
+    <Compile Include="FormField\FormFieldOptions.cs" />
+    <Compile Include="FormField\FormFieldText.cs" />
+    <Compile Include="Helpers\GeoPoint.cs" />
+    <Compile Include="Helpers\Helpers.cs" />
+    <Compile Include="Helpers\MeshGeneratorHelpers.cs" />
+    <Compile Include="SketchTool\SketchTool.cs" />
+    <Compile Include="SketchTool\SketchToolBrush.cs" />
+    <Compile Include="SketchTool\SketchToolCircle.cs" />
+    <Compile Include="SketchTool\SketchToolCircunference.cs" />
+    <Compile Include="SketchTool\SketchToolEraser.cs" />
+    <Compile Include="TerrainInput\TerrainInput.cs" />
+    <Compile Include="TerrainInput\TerrainInputForm.cs" />
+    <Compile Include="TerrainInput\TerrainInputGroup.cs" />
+    <Compile Include="TerrainInput\TerrainInputSketch.cs" />
+    <Compile Include="TerrainOutput\TerrainOutputImage.cs" />
+    <Compile Include="TerrainOutput\TerrainOutputObject.cs" />
+    <Compile Include="TerrainOutput\TerrainOutputValues.cs" />
+    <Compile Include="TerrainOutput\TerrainOutput.cs" />
+    <Compile Include="TerrainOutput\TerrainOutputGroup.cs" />
+    <Compile Include="TerrainOutput\TerrainOutputMesh.cs" />
+    <Compile Include="TerrainPlugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkflowData\HeightmapWorkflowData.cs" />
+    <Compile Include="WorkflowData\RoadsWorkflowData.cs" />
+    <Compile Include="WorkflowData\UrbanWorkflowData.cs" />
+    <Compile Include="WorkflowData\VegetationWorkflowData.cs" />
+    <Compile Include="WorkflowData\WaterBodiesWorkflowData.cs" />
+    <Compile Include="WorkflowSubData\ObjectArea.cs" />
+    <Compile Include="WorkflowSubData\RoadPath.cs" />
+    <Compile Include="WorkflowSubData\WaterPath.cs" />
+    <Compile Include="WorkflowData\WorkflowData.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy /y $(ProjectDir)$(OutDir)$(TargetFileName) $(ProjectDir)..\..\TerrainGenerationUI\Assets\Resources\Libs\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

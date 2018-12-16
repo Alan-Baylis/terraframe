@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerrainGeneration_Core", "TerrainGenerationCore\TerrainGeneration_Core.csproj", "{07191E53-4765-44D7-9631-D74F04F0B440}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerrainGeneration_HeightMap", "TerrainGenerationTerrain\TerrainGeneration_HeightMap.csproj", "{00AE10FE-40AE-4007-82B9-35D45D00847D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerrainGeneration_RiversAndOceans", "TerrainGenerationRiversAndOceans\TerrainGeneration_RiversAndOceans.csproj", "{13A296B0-D26C-4A45-9630-4AFB32E7E5F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerrainGeneration_Vegetation", "TerrainGenerationVegetation\TerrainGeneration_Vegetation.csproj", "{28B9B485-66C9-4E6A-9C50-3D60B1A46EBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerrainGeneration_TerrainLayerBase", "TerrainGeneration_PluginBase\TerrainGeneration_TerrainLayerBase.csproj", "{D77B2CCA-F86D-484D-B97C-B51C4FF0EA28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerrainGeneration_RoadsAndCities", "TerrainGeneration_RoadsAndCities\TerrainGeneration_RoadsAndCities.csproj", "{999C54C2-48E7-4AB9-A73E-645BFC92B196}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07191E53-4765-44D7-9631-D74F04F0B440}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07191E53-4765-44D7-9631-D74F04F0B440}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07191E53-4765-44D7-9631-D74F04F0B440}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07191E53-4765-44D7-9631-D74F04F0B440}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00AE10FE-40AE-4007-82B9-35D45D00847D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00AE10FE-40AE-4007-82B9-35D45D00847D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00AE10FE-40AE-4007-82B9-35D45D00847D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00AE10FE-40AE-4007-82B9-35D45D00847D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13A296B0-D26C-4A45-9630-4AFB32E7E5F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13A296B0-D26C-4A45-9630-4AFB32E7E5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13A296B0-D26C-4A45-9630-4AFB32E7E5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13A296B0-D26C-4A45-9630-4AFB32E7E5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28B9B485-66C9-4E6A-9C50-3D60B1A46EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B9B485-66C9-4E6A-9C50-3D60B1A46EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B9B485-66C9-4E6A-9C50-3D60B1A46EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B9B485-66C9-4E6A-9C50-3D60B1A46EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D77B2CCA-F86D-484D-B97C-B51C4FF0EA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77B2CCA-F86D-484D-B97C-B51C4FF0EA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77B2CCA-F86D-484D-B97C-B51C4FF0EA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77B2CCA-F86D-484D-B97C-B51C4FF0EA28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{999C54C2-48E7-4AB9-A73E-645BFC92B196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{999C54C2-48E7-4AB9-A73E-645BFC92B196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{999C54C2-48E7-4AB9-A73E-645BFC92B196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{999C54C2-48E7-4AB9-A73E-645BFC92B196}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
